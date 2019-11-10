@@ -17,6 +17,7 @@ submitButton.addEventListener('click', getURL);
 
 function getURL(e){
   e.preventDefault();
+  output.innerHTML = "";
   entry = foodChoice.value;
   let url= api + entry+ id+ "";
   display(url);
@@ -29,7 +30,6 @@ function display(url){
     })
     .then(data => {
 
-      console.log(data);
       // Work with JSON data here
       getRecipe(data);
       getTitles(data);
@@ -58,7 +58,6 @@ function display(url){
 
     })
     .catch(err => {
-      // Do something for an error here
     })
 }
 
