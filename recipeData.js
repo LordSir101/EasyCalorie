@@ -10,13 +10,15 @@ let calorieMin = document.getElementById('calorieMin');
 let calorieMax= document.getElementById('calorieMax');
 let submitButton = document.getElementById('submit');
 
-var urls = new Array();
-var titles= new Array();
+var urls;
+var titles;
 
 submitButton.addEventListener('click', getURL);
 
 function getURL(e){
   e.preventDefault();
+  urls = new Array();
+  titles= new Array();
   output.innerHTML = "";
   entry = foodChoice.value;
   let url= api + entry+ id+ "";
