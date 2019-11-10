@@ -1,0 +1,45 @@
+<html>
+
+<title>EasyCalorie</title>
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+p,body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+</style>
+
+<body>
+
+<!-- Top menu -->
+<div class="topbar padding16">
+	<h1>EasyCalorie</h1>
+</div>
+
+<!-- !PAGE CONTENT! -->
+
+<br><br>
+<div class="leftSide content">
+	<!-- Search terms-->
+	<div class="padding16">
+		<h3> Food Name:</h3>
+		<input type="text" name="foodName" id="foodChoice">
+
+		<h3> Calorie range: </h3>
+		Min: <input type="text" name="calorieRangeLow" id="calorieMin" size="5" maxlength="8">
+		Max: <input type="text" name="calorieRangeHigh" id="calorieMax" size="5" maxlength="8">
+
+		<br><br><br>
+		<input type="button" value="Search Foods" id="submit">
+	<!-- End Search terms-->
+	</div>
+</div>
+
+<br><br>
+<div class="rightSide content">
+  <div id="output">
+  </div>
+</div>
+
+
+  <script src="recipeData.js"></script>
+</body>
+</html>
